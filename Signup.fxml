@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="1080.0" prefWidth="1900.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="newproj.SignupController">
+   <children>
+      <ImageView fitHeight="1080.0" fitWidth="1900.0" layoutY="-7.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../image/n.jpg" />
+         </image>
+         <effect>
+            <BoxBlur iterations="3" />
+         </effect>
+      </ImageView>
+      <HBox alignment="CENTER" opacity="0.38" prefHeight="62.0" prefWidth="1900.0" style="-fx-background-color: BLACK;">
+         <children>
+            <Label prefHeight="27.0" prefWidth="155.0" text="REGISTER" textFill="#f2f2f2">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <VBox alignment="CENTER" layoutX="-14.0" prefHeight="1080.0" prefWidth="1900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="591.0" prefWidth="1882.0">
+               <children>
+                  <AnchorPane prefHeight="467.0" prefWidth="635.0">
+                     <children>
+                        <AnchorPane fx:id="yellow" opacity="0.43" prefHeight="591.0" prefWidth="635.0" style="-fx-background-color: #55c68c;" />
+                        <JFXButton fx:id="signup" buttonType="RAISED" defaultButton="true" layoutX="415.0" layoutY="476.0" onAction="#signedin" prefHeight="50.0" prefWidth="171.0" style="-fx-background-color: white; -fx-border-color: #55c68c; -fx-border-width: 4; -fx-border-radius: 10; -fx-background-radius: 10;" text="SIGN-UP" textFill="#431a1a">
+                           <font>
+                              <Font name="Copperplate Gothic Bold" size="21.0" />
+                           </font>
+                        </JFXButton>
+                        <TextField fx:id="email" layoutX="33.0" layoutY="205.0" prefHeight="62.0" prefWidth="554.0" promptText="email" style="-fx-background-radius: 10; -fx-border-color: #55c68c; -fx-border-radius: 10; -fx-border-width: 4;">
+                           <effect>
+                              <Glow />
+                           </effect>
+                        </TextField>
+                        <PasswordField fx:id="password" layoutX="36.0" layoutY="292.0" prefHeight="62.0" prefWidth="554.0" promptText="Password" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-border-width: 4; -fx-border-color: #55c68c;" />
+                        <TextField fx:id="username" layoutX="33.0" layoutY="115.0" prefHeight="62.0" prefWidth="554.0" promptText="Username" style="-fx-background-radius: 10; -fx-border-color: #55c68c; -fx-border-radius: 10; -fx-border-width: 4;">
+                           <effect>
+                              <Glow />
+                           </effect>
+                        </TextField>
+                        <TextField fx:id="contact" layoutX="36.0" layoutY="379.0" prefHeight="62.0" prefWidth="554.0" promptText="Contact" style="-fx-background-radius: 10; -fx-border-color: #55c68c; -fx-border-radius: 10; -fx-border-width: 4;">
+                           <effect>
+                              <Glow />
+                           </effect>
+                        </TextField>
+                        <JFXButton fx:id="goback" buttonType="RAISED" defaultButton="true" layoutX="42.0" layoutY="476.0" onAction="#backtologin" prefHeight="50.0" prefWidth="171.0" style="-fx-background-color: white; -fx-border-color: #55c68c; -fx-border-width: 4; -fx-border-radius: 10; -fx-background-radius: 10;" text="BACK" textFill="#431a1a">
+                           <font>
+                              <Font name="Copperplate Gothic Bold" size="21.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
